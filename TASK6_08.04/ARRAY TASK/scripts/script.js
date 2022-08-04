@@ -10,8 +10,7 @@ for (var a = 0; a < size; a++) {
         break;
     }
 }
-
-if (marking = 0) {
+if (marking == 0) {
     alert(AR);
     AR.sort();
     alert(AR);
