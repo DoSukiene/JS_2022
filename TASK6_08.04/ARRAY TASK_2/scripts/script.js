@@ -8,7 +8,7 @@ while (array1 != "END") {
 
 }
 alert("Element enetering is done")
-alert("Array is: " +AR);
+alert("Array is: " + AR);
 AR.sort();
-alert("Sorted array is: "+AR);
+alert("Sorted array is: " + AR);
 

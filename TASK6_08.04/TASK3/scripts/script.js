@@ -50,13 +50,22 @@ for (var i = 0; i < size; i++) {
 }
 
 //same values - NOT working properly yet
+
 for (var x = 0; x < size; x++) {
     samev = AR[x];
-    if (Number(samev) == AR[x + 1]) {
-        SAME[sv] = AR[x + 1];
-        sv = sv + 1;
-        break
+    for (var y = 0; y < (size - 1); y++) {
+        if (Number(samev) == AR[y + 1]) {
+            SAME[sv] = AR[y + 1];
+            sv = sv + 1;
+            break;
+
+        } else if (Number(samev) == AR[x - y]) {
+            SAME[sv] = AR[x - y];
+            sv = sv + 1;
+            break;
+        }
     }
+
 
 }
 
